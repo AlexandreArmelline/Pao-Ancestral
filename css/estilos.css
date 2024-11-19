@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+/* --------------------------------------------Estilos Gerais-------------------------------------------------*/
+:root{
+    --corBackground: rgb(253, 250, 234);
+    /* --corBackground: rgb(255, 242, 171); */
+    --corFontes: #212F1E;
+    --corBackgroundFooter: #212F1E;
+    --corBotao: #B29154;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+#container{
+    background-color: var(--corBackground);
+    color: var(--corFontes);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    font-size: 2.2rem;
+    width: max-content;
+}
+
+h2{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.8rem;
+    font-weight: 200;
+    width: 90%;
+}
+
+h3{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.5rem;
+    width: max-content;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: var(--corFontes);
+}
+
+hr{
+    height: 1px;
+    background-color: black;
+    border: 0px solid black;
+}
+
+.esconder{
+display: none;
+}
+  
+
+
+/* ------------------------------------------------Estilos Header------------------------------------------*/
+
+header{
+    position: fixed;
+    background-color: var(--corBackground);
+    width: 100vw;
+}
+
+#menu_desktop{
+    display: flex;
+    width: 65vw;
+    justify-content: space-evenly;
+    margin: 1vw 10vw 2vw 27vw;
+    gap: 5vw;
+    font-size: 1.6rem;
+}
+
+#menu_desktop p{
+    background-color: var(--corBotao);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    padding: .5vw 1.5vw;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.171) ;
+}
+
+#menu_desktop a{
+    text-decoration: none;
+    color: var(--corFontes);
+}
+
+
+
+/* ----------------------------------------------------Estilos Main--------------------------------------------*/
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 28vw;
+    width: 65vw;
+}
+
+#texto{
+    display: flex;
+    flex-direction: column; 
+    height: max-content; 
+    margin-top: 8vw; 
+}
+
+#texto h1{
+    margin-bottom: 2vw;
+}
+
+#texto p{
+    width: 65vw;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#carrosel{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.swiper {
+    width: 65vw;   
+    margin-bottom: 1vw;
+    text-align: left;
+}
+
+.swiper-wrapper{
+    margin-top: 1vw;
+}
+
+
+.fotoPao{
+    width: 10vw;
+    border-radius: 25%;
+    box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.281) ;
+}
+
+
+
+/* -------------------------------------------Estilos Footer----------------------------------------------------*/
+
+footer{
+    background-color: var(--corBackgroundFooter);
+    position: fixed;
+    bottom: 0vh;
+    width: 100vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    z-index: 1;
+}
+
+footer a{
+    color: white;
+    margin: 1vw;
+    text-decoration: none;
+}
+
+
+
+/* ----------------------------------------------------Estilos Aside--------------------------------------------*/
+aside{ 
+    width: 20%;
+    height: 100vh; 
+    float: right;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vw;
+    width: 230px;
+    gap: 10px;
+    align-items: center;
+}
+
+#logo img{
+    width: 11.5vw;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281);
+    border-radius: 50%;
+}
+
+#logo p{
+    font-size: 1.5rem;
+    font-family: "Kaushan Script", cursive;
+    margin-left: 1vw;
+}
+
+#bandeira{
+    width: 150px;
+    margin-bottom: 7vw;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281) ;
+}
+
+
+
+/*--------------------------------------Paginas Receitas---------------------------------------- */
+  #img_receitas{
+    margin-top: 2vw;
+  }
+
+  #img_receitas img{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281);
+    
+  }
+
+  #img_ingredientes{
+    display: flex;
+    gap: 10vw;
+  }
+
+  #img_ingredientes figcaption{
+    text-align: center;
+  }
+
+  #img_ingredientes p{
+    font-weight: 700;
+  }
+
+  #img_ingredientes li{
+    margin: .5vw 0;
+    font-size: 1.1rem;
+  }
+
+  #modo_preparo{
+    margin: 10vw 0;
+  }
+
+  #modo_preparo li{
+    margin: 2vw 0;
+    font-size: 1.2rem;
+  }
+
+  #foto_alunos{
+    margin-bottom: 5vw;
+    border-radius: 200px;
+  }
+
+  #foto_alunos img{
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281) ;
+    border-radius: 15px;
+  }
+  
+
+
+/*--------------------------------------------- Estilos galeria------------------------------------------- */
+
+#titulo_galeria{
+    margin: 10vw 0 5vw 0;
+    width: max-content;
+}
+#img_galeria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img_galeria img{
+   width: 15vw;
+   border-radius: 15px;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281) ;
+}
+
+#img_galeria p{
+   margin-top: 1vw;
+   text-align: center;
+ }
+
+
+
+/*--------------------------------------------- Estilos sobre------------------------------------------- */
+
+ #sobre h1{
+    margin: 10vw 0 1.5vw 0;
+ }
+
+ #sobre h2{
+    margin: 5vw 0 1.5vw 0;
+ }
+
+ #sobre p{
+    margin: 0vw 0 7vw 0;
+    font-style: italic;
+ }
+
+
+
+
+
+
+/* -----------------------------------------Estilos Responsividade Smartphone------------------------------------*/
+
+#logo_responsivo{
+    display: none;
+}
+
+#menu_responsivo{
+    display: none;
+}
+
+#bandeira_responsivo{
+    display: none;
+}
+
+
+
+
+@media (max-width: 920px){
+
+    aside{ 
+        display: none;
+    }
+
+    #menu_desktop{
+        display: none;
+    }
+
+    h3{
+        width: 90vw;
+        margin: 10vw 0vw;
+    }
+
+    h2{
+        width: 90vw;
+       margin-bottom: 3vw;
+    }
+
+    #menu_responsivo{
+        display: block;
+        margin: 5vw 0 0 5vw;
+    }
+
+    #menuFechado{
+        width: 30px;
+    }
+    
+    #menuFechado:hover{
+        box-shadow: 0px 0px 3px #b257128c;
+    }
+    
+    #menuAberto{
+        background-color: var(--corBackground);
+        height: auto;
+        z-index: 1;
+        box-shadow: 1px 1px 3px #00000081;
+        border-radius: 10px;
+        padding: 10px;
+        opacity: 90%;
+        position: absolute;
+    }
+
+    #menuAberto h3{
+        width: max-content;
+        margin: 0;
+    }
+    
+    #opcoesMenu{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    
+    #opcoesMenu a{
+        margin: 1vw;
+        text-decoration: none;
+        color: var(--corFontes);
+    }
+    
+    #opcoesMenu p{
+       padding-left: 2vw;
+    }
+    
+    #opcoesMenu p:hover{
+       text-shadow: 1px 1px 1px #b29145;
+       font-size: 1.2rem;
+    } 
+    
+    #logo_responsivo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 5vw;
+    }
+
+    #logo_responsivo img{
+        width: 20vw; 
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281);
+        border-radius: 50%;
+    }
+
+    main{
+        margin: 30vw 0vw 10vw 0vw;
+    }
+
+    #texto{
+        padding: 0 4vw;
+    }
+
+    #texto p{
+        width: 85vw;
+    }
+
+    #carrosel{
+        margin-bottom: 6vw;
+        width: 100vw;
+        
+    }
+
+    #carrosel h3{
+        width: max-content;
+        margin: 5vw;
+    }
+
+    .swiper {
+        width: 50vw;  
+        text-align: center; 
+    }
+
+    .fotoPao{
+        width: 40vw;
+    }
+
+
+    /* -----------------------------Estilos Responsividade Smartphone Pagina Receita----------------------*/
+
+    #bandeira_responsivo{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        margin-top: 5vw;
+        width: 100vw;
+    }
+
+    #bandeira_responsivo img{
+        width: 30vw;
+        box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.281);
+    }
+
+    #img_receitas{
+       width: 100vw;
+       padding: 7vw;
+    }
+
+   #img_receitas li{
+        width: 75vw;
+        margin: 5vw;
+    }
+
+    #img_receitas h3{
+        width: max-content;
+    }
+
+    #img_ingredientes{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+
+    #img_ingredientes img{
+       border-radius: 25px;
+       width: 50vw;
+       height: 50vw;
+    }
+
+    #img_ingredientes figcaption{
+        text-align: start;
+    }
+
+    #foto_alunos{
+        width: 100vw;
+        text-align: center;
+    }
+
+    #foto_alunos img{
+       width: 60vw;
+    }
+
+    footer{
+        height: 10vw;
+    }
+
+ 
+
+   
+
+}
+
+
